@@ -39,7 +39,7 @@ hub:
       authenticator_class: github
   image:
     name: quay.io/yuvipanda/z2jh-hub-with-fancy-profiles
-    tag: z2jh-v4.0.0-fancy-profiles-sha-f80b661
+    tag: z2jh-v4.0.0-fancy-profiles-sha-2ad902d
   extraConfig:
     01-enable-fancy-profiles: |
       from jupyterhub_fancy_profiles import setup_ui
@@ -155,7 +155,7 @@ singleuser:
             display_name: CPU 
             description: General purpose Python + R environment 
             kubespawner_override:
-              image:  "ghcr.io/boettiger-lab/binder:latest"
+              image:  "gitlab-registry.nrp-nautilus.io/cboettig/binder:latest"
           02-gpu:
             display_name: GPU
             description: CUDA environment
